@@ -74,6 +74,7 @@ object ByKeyFunctions {
   val totalCountsAggregate = wordCounts.aggregateByKey(0.0)(_ + _, _ + _)
   totalCountsAggregate.collectAsMap()
 
+
   /*
     CombineByKey is the most general function available that can combine values inside your RDD. You need
     - a function that turns a value into an aggregate value so that further aggregates can start from it
