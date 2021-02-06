@@ -95,6 +95,7 @@ object ReusingObjects {
       textStats
     }
 
+
     def combineStats(stats1: MutableTextStats, stats2: MutableTextStats): MutableTextStats = {
       stats1.nLines += stats2.nLines
       stats1.nWords += stats2.nWords
