@@ -4,6 +4,7 @@ import org.apache.spark.sql.SparkSession
 
 object Playground1  {
 
+
   val spark = SparkSession.builder()
     .appName("Spark Optimization Playground")
     .master("local")
