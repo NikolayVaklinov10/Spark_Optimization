@@ -36,6 +36,7 @@ object BroadcastJoins {
   joined.explain
   // joined.show - takes an ice age
 
+
   // a smarter join
   val joinedSmart = table.join(broadcast(lookupTable), "id")
   joinedSmart.explain()
