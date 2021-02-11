@@ -22,6 +22,7 @@ object RDDSkewedJoins {
   val laptops = sc.parallelize(Seq.fill(40000)(DataGenerator.randomLaptop()))
   val laptopOffers = sc.parallelize(Seq.fill(100000)(DataGenerator.randomLaptopOffer()))
 
+
   def plainJoin() = {
     val preparedLaptops = laptops.map {
       case Laptop(registration, make, model, procSpeed) => ((make, model), (registration, procSpeed))
